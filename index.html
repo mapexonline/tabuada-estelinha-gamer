@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jogo da Forca - Tabuada</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>🎮 Jogo da Forca - Tabuada</h1>
+    <h2 id="estelinha">ESTELINHA</h2>
+    <div id="pergunta">Carregando pergunta...</div>
+
+    <input type="number" id="resposta" placeholder="Digite sua resposta" />
+    <button onclick="verificarResposta()">Responder</button>
+
+    <h3>Energia:</h3>
+    <div id="barraContainer">
+      <div id="barraEnergia"></div>
+    </div>
+
+    <h2 id="mensagemFinal"></h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>

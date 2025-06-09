@@ -1,0 +1,124 @@
+/* IMPORTA A FONTE GAMER */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", monospace;
+  background: linear-gradient(to bottom right, #1f1c2c, #928dab);
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: center;
+}
+
+/* TÍTULOS */
+h1,
+h2,
+h3,
+#pergunta,
+#mensagemFinal {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 #000;
+  color: #fff;
+}
+
+/* PERGUNTA */
+#pergunta {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* ENTRADA E BOTÃO */
+input,
+button {
+  font-size: 1em;
+  padding: 12px 18px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: "Press Start 2P", monospace;
+}
+
+input {
+  width: 140px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #dd2476, #ff512f);
+}
+
+/* BARRA DE ENERGIA */
+#barraContainer {
+  width: 100%;
+  max-width: 320px;
+  height: 30px;
+  border: 2px solid #fff;
+  background-color: #111;
+  margin: 30px 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#barraEnergia {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  transition: width 0.4s ease, background-color 0.4s ease;
+  border-radius: 20px 0 0 20px;
+}
+
+/* MENSAGEM FINAL */
+#mensagemFinal {
+  font-size: 1.1em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  #pergunta {
+    font-size: 0.9em;
+  }
+
+  input,
+  button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  #barraContainer {
+    height: 24px;
+  }
+}
